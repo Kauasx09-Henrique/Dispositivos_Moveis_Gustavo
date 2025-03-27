@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Perfil(props) {
 
-console.log(props)
+  console.log(props)
 
   return (
     <View>

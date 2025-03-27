@@ -8,18 +8,18 @@ export default function PrimeiroComponente() {
         <View>
 
             <Text>
-          teste 
+                teste
 
             </Text>
             <Text>
-               teste 3
+                teste 3
 
             </Text>
-        
-        <Text>
-            opcao escolhida :(
-        </Text>
-          
+
+            <Text>
+                opcao escolhida :(
+            </Text>
+
         </View>
     )
 }

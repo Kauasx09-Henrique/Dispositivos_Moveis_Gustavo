@@ -1,69 +1,65 @@
+
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-
-import { ScrollView, StyleSheet, Text, View, Button, Alert } from 'react-native';
-import PrimeiroComponente from './Componentes/PrimeiroComponente';
-import SegundoComponente from './Componentes/SegundoComponente';
-import JavaScriptComponentes from './Componentes/JavaScriptComponentes'
-import Perfil from './Componentes/Perfil';
-
-
-function alerta() {
-  alert("")
-}
-
+import { ScrollView, StyleSheet, View } from 'react-native';
+import Atleta from './Componentes/Atleta';
 
 export default function App() {
+
+  const listaAtletas = [
+    {
+      nome: "Neymar Jra",
+      idade: 33,
+      numero: 10,
+      imagem: 'https://i.pinimg.com/236x/ba/4b/4d/ba4b4d89ee0dcc15ac908758e0eb737a.jpg'
+    },
+    {
+      nome: "Lebron James",
+      idade: 38,
+      numero: 23,
+      imagem: 'https://i.pinimg.com/236x/7c/48/19/7c481977061c7f68bb5970dae91f1787.jpg'
+    },
+    {
+      nome: "Usain Bolt",
+      idade: 40,
+      numero: 1,
+      imagem: 'https://i.pinimg.com/236x/45/b5/d1/45b5d16bf2a2d67cf519ca206fc8d28d.jpg'
+    },
+  ]
+
+
   return (
     <ScrollView>
       <View style={styles.container}>
+        <StatusBar style="auto" />
 
-        <PrimeiroComponente />
-        <SegundoComponente />
+        {
+          listaAtletas.map(
+            atleta => {
+              return (
+                <Atleta
+                  nome={atleta.nome}
+                  idade={atleta.idade}
+                  numero={atleta.numero}
+                  imagem={atleta.imagem}
+                />
+              )
+            }
+          )
+        }
 
-        <JavaScriptComponentes />
-
-        <Perfil
-        
-        nome="Gustavo"
-        sobrenome="Lima"
-        idade={30}
-        
 
 
-        />
-        <Perfil
-        
-        nome="Gustavos"
-        sobrenome="Limas"
-        idade={12}
-        
-
-        
-        />
-
-        <Button title='Check' onPress={alerta}></Button>
       </View>
     </ScrollView>
   );
 }
 
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#####',
-    fontSize: 32,
-    alignItems: "center",
-    justifyContent: "center",
-    padding: 120
-
-  },
-  Title: {
-    textAlign: "left",
-    fontSize: 26,
-    display: "flex",
-    padding: 90
-
+    backgroundColor: '#fff',
+    // alignItems: 'center',
+    // justifyContent: 'center',
   },
 });
