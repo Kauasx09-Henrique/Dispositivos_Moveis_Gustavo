@@ -1,7 +1,7 @@
 import React from 'react';
 import { ScrollView, Text, StyleSheet } from 'react-native';
-import Filme from './Componentes/Filme';  // Caminho para o arquivo Filme.js
-import Serie from './Componentes/serie';  // Caminho para o arquivo Serie.js
+import Filme from './Componentes/Filme'; 
+import Serie from './Componentes/serie';  
 
 // Filmes da Marvel
 const listaFilmes = [
