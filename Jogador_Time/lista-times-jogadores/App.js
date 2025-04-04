@@ -85,6 +85,7 @@ export default function App() {
               mascote={item.mascote}
               imagem={item.imagem}
               jogadores={item.jogadores}
+              
             />
           )}
         />

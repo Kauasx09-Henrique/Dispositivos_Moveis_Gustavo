@@ -14,10 +14,11 @@ export default function Time(props) {
     <Card style={{ margin: 10 }}>
       <Card.Title title={nome} />
       <Card.Content>
-        <Text>Ano de Fundação: {anoFundacao}</Text>
+        <Text>Ano de Fundação: {anoFundacao} </Text>
+
       </Card.Content>
       <Card.Content>
-        <Text>Mascote: { mascote}</Text>
+        <Text>Mascote: { mascote} </Text>
       </Card.Content>
       <Card.Cover source={{ uri: imagem }} />
       <Card.Actions>
@@ -25,9 +26,11 @@ export default function Time(props) {
           horizontal
           data={jogadores}
           renderItem={({ item }) => (
+            
             <Municipio
               nome={item.nome}
               imagem={item.imagem}
+              numero={item.numero}
             />
           )}
         />
