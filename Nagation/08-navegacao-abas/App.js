@@ -2,7 +2,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { NavigationContainer } from '@react-navigation/native'
 import React from 'react'
 import { PaperProvider } from 'react-native-paper'
-import { Ionicons } from '@expo/vector-icons'
+
 
 import HomeScreen from './screens/Produtos.jsx'
 import ProfileScreen from './screens/PerfilUser.jsx'
