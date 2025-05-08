@@ -1,14 +1,12 @@
-import 'react-native-gesture-handler';
-import { Drawer, PaperProvider } from 'react-native-paper';
-import { NavigationContainer } from '@react-navigation/native';
-import DrawerRoutes from './src/Routes/DrawerRoutes.jsx';
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
 
 export default function App() {
   return (
- <PaperProvider>
-  <NavigationContainer>
-    <DrawerRoutes/>
-  </NavigationContainer>
- </PaperProvider>
-  );
+    <View>
+     
+    </View>
+  )
 }
+
+const styles = StyleSheet.create({})
